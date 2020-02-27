@@ -2,11 +2,9 @@ import React, { useEffect } from 'react';
 import withFineData from '../contexts/FinesContext';
 
 const Home = ({ fineData }) => {
-	useEffect(() => {
-		console.log(fineData);
-	}, [fineData]);
 	return (
 		<div>
+			<h1>Home</h1>
 			{fineData &&
 				fineData.map(fine => (
 					<div key={fine.id}>
